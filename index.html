@@ -540,8 +540,11 @@
             serviceTypeSelect.disabled = true;
             serviceDescription.textContent = 'Memuat daftar layanan...';
             
-            fetch('https://smmnusantara.id/api/services')
-                .then(response => {
+            fetch('https://smmnusantara.id/api/services', {
+    method: 'GET', // tambahkan method (GET/POST/etc)
+    headers: {
+        'Authorization': 'Bearer yutcvx-hce7vz-puafq5-egkxos-homfxg',
+        'Content-Type': 'application/json' // tambahkan content type jika perlu
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
