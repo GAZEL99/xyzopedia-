@@ -543,7 +543,7 @@
             serviceTypeSelect.disabled = true;
             serviceDescription.textContent = 'Memuat daftar layanan...';
             
-            fetch('https://smmnusantara.id/api/services', {
+            fetch('api/service.js', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
