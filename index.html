@@ -543,7 +543,7 @@
             serviceTypeSelect.disabled = true;
             serviceDescription.textContent = 'Memuat daftar layanan...';
             
-            fetch('api/service.js', {
+            fetch('/api/service.js', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
